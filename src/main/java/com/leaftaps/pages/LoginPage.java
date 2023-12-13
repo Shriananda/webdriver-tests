@@ -11,6 +11,7 @@ public class LoginPage extends ProjectHooks{
 	public LoginPage enterUsername(String data) {
 		clearAndType(locateElement(Locators.ID, "username"), data);
 		reportStep(data+" entered successfully","pass");
+		System.out.println(data+" entered successfully");
 		return this;
 	}
 	
@@ -18,6 +19,7 @@ public class LoginPage extends ProjectHooks{
 	public LoginPage enterPassword(String data) {
 		clearAndType(locateElement(Locators.ID, "password"), data);
 		reportStep(data+" entered successfully","pass");
+		System.out.println(data+" entered successfully");
 		return this;
 	}
 	 
@@ -25,6 +27,7 @@ public class LoginPage extends ProjectHooks{
 	public HomePage clickLogin() {
 		click(locateElement(Locators.CLASS_NAME, "decorativeSubmit"));
 		reportStep("Leaftaps Login button clicked successfully", "pass");
+		System.out.println("Leaftaps Login button clicked successfully");
 		return new HomePage();
 	}
 
